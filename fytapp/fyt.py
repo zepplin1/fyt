@@ -1,10 +1,15 @@
 from fytapp import app
-from flask import Flask
+from flask import Flask, render_template
+from db import db
 
 @app.route('/')
 def index():
-	return 'this is a test'
+	return 'homepage'
 
 @app.route('/login')
 def login():
-	return 'this is the login page'
+	return render_template('login.html')
+
+@app.route('/register')
+def reg():
+	return render_template('reg.html')
