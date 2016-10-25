@@ -1,6 +1,6 @@
 from fytapp import app
 from flask import Flask, render_template
-from db import db
+from db import get_db
 
 @app.route('/')
 def index():
