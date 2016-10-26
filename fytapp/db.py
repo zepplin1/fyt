@@ -1,3 +1,6 @@
+"""
+This is not functioning, will work on later
+"""
 import sqlite3
 from flask import g
 
